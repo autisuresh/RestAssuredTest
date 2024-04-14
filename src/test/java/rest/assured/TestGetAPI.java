@@ -13,7 +13,7 @@ import static org.apache.http.HttpStatus.SC_OK;
 public class TestGetAPI {
 
     @Test
-    public void test_getApi() {
+    public void test_get_api() {
         String resource = "https://reqres.in/api/users/2";
         ValidatableResponse response = given().
         when().get(resource).
