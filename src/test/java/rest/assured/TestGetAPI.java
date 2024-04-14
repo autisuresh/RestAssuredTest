@@ -3,7 +3,7 @@ package rest.assured;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.ValidatableResponse;
 import org.junit.Assert;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import java.io.File;
 

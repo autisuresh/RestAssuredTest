@@ -1,7 +1,8 @@
 package rest.assured;
 
 import org.json.JSONObject;
-import org.junit.Test;
+import org.testng.annotations.Test;
+
 import static io.restassured.RestAssured.given;
 
 public class TestPostAPI {

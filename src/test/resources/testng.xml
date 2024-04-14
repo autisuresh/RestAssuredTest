@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="restAssuredTestSuite">
+    <test thread-count="1" name="RestAssuredTest">
+        <classes>
+            <class name="rest.assured.TestGetAPI"/> <!-- test case class-->
+            <class name="rest.assured.TestPostAPI"/> <!-- test case class-->
+            <class name="rest.assured.TestDeleteAPI"/> <!-- test case class-->
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
