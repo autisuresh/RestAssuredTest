@@ -11,11 +11,16 @@ jobs:
         run: |
           echo "Your current workspace is ${{ github.workspace }}"
           echo "The name of your branch is ${{ github.ref }} and name of repository  is ${{ github.repository }}"
-          java -version
-
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
 
+      - name: setup java 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+        run: |
+          java -version
       - name: checkout to repo
         uses: actions/checkout@v4
 
