@@ -7,20 +7,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: "check workspace"
+      - name: check workspace
         run: |
           echo "Your current workspace is ${{ github.workspace }}"
           echo "The name of your branch is ${{ github.ref }} and name of repository  is ${{ github.repository }}
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
 
-      - name: "checkout to repo"
+      - name: checkout to repo
         uses: actions/checkout@v4
 
-      - name: "run build package"
+      - name: run build package
         run: |
           mvn clean package
 
-      - name: "run tests suite"
+      - name: run tests suite
         run: |
           mvn clean test
