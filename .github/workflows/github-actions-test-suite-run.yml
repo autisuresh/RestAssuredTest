@@ -11,6 +11,8 @@ jobs:
         run: |
           echo "Your current workspace is ${{ github.workspace }}"
           echo "The name of your branch is ${{ github.ref }} and name of repository  is ${{ github.repository }}"
+          java -version
+
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
 
