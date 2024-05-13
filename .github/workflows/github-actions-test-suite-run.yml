@@ -10,7 +10,7 @@ jobs:
       - name: check workspace
         run: |
           echo "Your current workspace is ${{ github.workspace }}"
-          echo "The name of your branch is ${{ github.ref }} and name of repository  is ${{ github.repository }}
+          echo "The name of your branch is ${{ github.ref }} and name of repository  is ${{ github.repository }}"
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
 
