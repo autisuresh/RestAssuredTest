@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="restAssuredTestSuite">
+<suite name="restAssuredTestSuite" parallel="tests" thread-count="3">
     <test thread-count="1" name="RestAssuredTest">
         <classes>
             <class name="rest.assured.TestGetAPI"/> <!-- test case class-->
