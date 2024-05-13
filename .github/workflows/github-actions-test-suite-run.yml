@@ -19,8 +19,10 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-        run: |
-          java -version
+
+      - name: check java version
+        run: java -version
+
       - name: checkout to repo
         uses: actions/checkout@v4
 
